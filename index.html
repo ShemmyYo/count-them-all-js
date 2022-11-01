@@ -10,11 +10,20 @@
 
 </head>
 <body>
-    
-
-
-
-
+    <h1 class="main-title">Customs counter:</h1>
+    <div class="counter-box">
+        <h2 id="import-count-el">0</h2>
+        <h2 id="export-count-el">0</h2>
+    </div>
+    <div class="button-box">
+        <button id="increment-btn" onclick="increment()">Import</button>
+        <button id="save-btn" onclick="save()">SAVE</button>
+        <button id="decrement-btn" onclick="decrement()">Export</button>
+    </div>
+    <div class="entries-count-box">
+        <p id="import-save-el">Import entries: </p>
+        <p id="export-save-el">Export entries: </p>
+    </div>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
