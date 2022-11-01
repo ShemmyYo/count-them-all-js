@@ -4,25 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;600&display=swap" rel="stylesheet">
+
     <title>Count Them All!</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 <body>
-    <h1 class="main-title">Customs counter:</h1>
-    <div class="counter-box">
-        <h2 id="import-count-el">0</h2>
-        <h2 id="export-count-el">0</h2>
-    </div>
-    <div class="button-box">
-        <button id="increment-btn" onclick="increment()">Import</button>
-        <button id="save-btn" onclick="save()">SAVE</button>
-        <button id="decrement-btn" onclick="decrement()">Export</button>
-    </div>
-    <div class="entries-count-box">
-        <p id="import-save-el">Import entries: </p>
-        <p id="export-save-el">Export entries: </p>
+    <div id="main-box">
+        <h1>Customs counter:</h1>
+        <div id="counter-box">
+            <h2 id="import-count-el">0</h2>
+            <h2 id="export-count-el">0</h2>
+        </div>
+        <div id="button-box">
+            <div class="around-box-import">
+                <button id="increment-btn" onclick="increment()">Import</button>
+                <button id="decrement-btn" onclick="decrement()">Export</button>
+            </div>
+            <div class="around-box-export">
+                <button id="save-btn" onclick="saveImp()">Save Import</button>
+                <button id="save-btn" onclick="saveExp()">Save Export</button>
+            </div>
+        </div>
+        <div id="entries-count-box">
+            <p id="import-save-el">Import entries: </p>
+            <p id="export-save-el">Export entries: </p>
+        </div>
     </div>
     <script src="assets/js/script.js"></script>
 </body>

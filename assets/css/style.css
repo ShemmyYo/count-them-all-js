@@ -1,20 +1,82 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
+    background-image: url(../images/revenue-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Kanit', sans-serif;
+    border: solid 1px red;
+    width: 100vh;
+    min-width: 630px;
+    min-height: 650px;
+    margin: auto;
+}
+
+#main-box {
+    width: 70%;
+    margin: 10px 30px;
+    text-align: center;
     
-}
+    border: solid 1px red;
+    border-radius: 16px;;
 
-.class main-title {
-
-}
-
-.class counter-box {
-
-}
-
-.class button-box {
+    background-color: whitesmoke;
+    opacity: 0.6;
+    height: 280px;
+    width: 500px;
 
 }
 
-.class entries-count-box {
+h1 {
+    text-align: center;
+    margin: 15px 0 10px 0;
+}
 
+#counter-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+h2 {
+    display: inline-flex;
+    margin: 10px 0 ;
+}
+
+#button-box {
+ display: inline-block;
+}
+
+/* .around-box-import,
+.around-box-export {
+    display: block;
+    width: 120px;
+} */
+
+button {
+    border: none;
+    padding: 10px;
+    color: rgb(0, 82, 0);
+    background-color: #00140020;
+    font-weight:900;
+    width: 200px;
+    margin: 15px;
+    border-radius: 16px;
+}
+
+#entries-count-box {
+    display: flex ;
+    display: block;
+    text-align: left;
+    margin-top: 230px;;
+    min-height: 300px;
+
+}
+
+p {
+    font-weight: 600;
 }
