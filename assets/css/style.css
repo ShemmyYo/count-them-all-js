@@ -6,19 +6,22 @@
 }
 
 body {
-    background-image: url(../images/revenue-bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
     font-family: 'Kanit', sans-serif;
-    width: 100vh;
-    min-width: 630px;
-    min-height: 650px;
+    min-height: 100vh;
     margin: auto;
 }
 
+#bg-logo {
+    position: relative;
+}
+
 #main-box {
-    width: 70%;
-    margin: 10px 30px;
+    position: absolute;
+    top: 50px;
+    left: 15px;
+
+    width: 100%;
+    margin: 20px 20px;
     text-align: center;
     
     box-shadow: 0 5px 8px 0 #1b262580;
@@ -26,7 +29,7 @@ body {
 
     background-color: whitesmoke;
     opacity: 0.6;
-    height: 280px;
+    height: 435px;
     width: 500px;
 
 }
@@ -71,9 +74,7 @@ button {
     display: flex ;
     display: block;
     text-align: left;
-    margin-top: 230px;;
-    min-height: 300px;
-
+    margin: 50px 10px;
 }
 
 p {
